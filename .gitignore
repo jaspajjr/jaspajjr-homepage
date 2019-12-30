@@ -1,0 +1,13 @@
+__pycache__/
+.vscode
+.venv
+Thumbs.db
+.DS_Store
+.idea
+*.iml
+*.ipr
+*.iws
+.project
+.settings
+.cache
+node_modules
