@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Carney">
+    <meta name="description" content="Machine Learning thoughts">
+    <title>Appleseed's Blog</title>
+</head>
+
+<body>
+    <h1><a href="{{ url_for("home") }}">John's Blog</a></h1>
+
+    <div>
+        {% block content %}
+        <p>Default Content</p>
+        {% endblock content %}
+    </div>
+</body>
+</html>
