@@ -22,5 +22,10 @@ def page(path):
     return render_template("page.html", page=page)
 
 
+@app.route("/blog")
+def blog():
+    return render_template("blog.html", pages=pages)
+
+
 if __name__ == "__main__":
     app.run(debug=True)

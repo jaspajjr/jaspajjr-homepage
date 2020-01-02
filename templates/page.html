@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>{{ page.title }}</h2>
-    {{ page.html|safe }}
+    <h4 class="post-title">Posts</h4>
+
+    {% with pages = pages %}
+        {% include "_list.html" %}
+    {% endwith %}
 {% endblock content %}
