@@ -9,12 +9,36 @@
 </head>
 
 <body>
-    <h1><a href="{{ url_for("home") }}">John's Blog</a></h1>
+      <div class="container">
+          <div id="wrapper" style="margin-top:10px; margin-bottom:10px">
 
-    <div>
-        {% block content %}
-        <p>Default Content</p>
-        {% endblock content %}
-    </div>
+            <div style="float:left;" id="2">
+                <h4 style="line-height: 15px;"><a href="{{ url_for("home") }}">John Carney</a></h4>
+            </div>
+
+             <div style="float:right;padding-top:10px;padding-right:50px;" id="3">
+                <ul style="list-style:none;">
+                    <li id="link-list"><a href="{{ url_for("home") }}">home</a></li>
+                    <li id="link-list"><a href="{{ url_for("blog") }}">About</a></li>
+                    <li id="link-list"><a href="http://github.com/john-b-yang" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div id="wrapper" style="margin-top:10px; margin-bottom:10px">
+                <p><small>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                        <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor" fill-rule="evenodd"></path>
+                    </svg>
+                    Manchester, UK
+                </small></p>
+
+            </div>
+
+            <div>
+                {% block content %}
+                    <p>Default Content</p>
+                {% endblock content %}
+            </div>
+      </div>
 </body>
 </html>

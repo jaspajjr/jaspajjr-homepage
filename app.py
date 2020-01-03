@@ -22,9 +22,14 @@ def page(path):
     return render_template("page.html", page=page)
 
 
-@app.route("/blog")
+@app.route("/blog/")
 def blog():
     return render_template("blog.html", pages=pages)
+
+
+@app.errorhandler(404)
+def page_not_found(path):
+    return render_template('404.html'), 404
 
 
 if __name__ == "__main__":
