@@ -1,14 +1,25 @@
 body {
   background-color: #3a4660;
+  font-family: Josefin Sans, sans-serif;
   margin-top: 100px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
+title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: Josefin Sans, sans-serif;
+  color: #fff;
+  font-size: 56px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
 h1 {
   margin-top: 20px;
   margin-bottom: 30px;
-  font-family: Averta, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   color: #fff;
   font-size: 56px;
   line-height: 44px;
@@ -18,7 +29,7 @@ h1 {
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Averta, sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 22px;
   line-height: 36px;
   font-style: normal;
@@ -28,6 +39,13 @@ h2 {
 
 p {
   margin-bottom: 20px;
+  font-family: Josefin Sans, sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+ul.a {
   font-family: Averta, sans-serif;
   color: #fff;
   font-size: 22px;
@@ -60,4 +78,14 @@ a:focus {
   padding-right: 25px;
   float: left;
   border-bottom: 0px none #000;
+}
+
+#link-list {
+    display: inline-block;
+    font-family: 'font-family: Josefin Sans;', 'Arial', sans-serif;
+    font-size: 20px;
+    zoom: 1;
+    *display: inline;
+    padding-left: 25px;
+    color: black;
 }
