@@ -30,6 +30,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-family: Josefin Sans, sans-serif;
+  color: #fff;
   font-size: 22px;
   line-height: 36px;
   font-style: normal;
@@ -99,4 +100,15 @@ a:focus {
     *display: inline;
     padding-left: 25px;
     color: black;
+}
+
+.post-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
 }
