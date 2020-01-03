@@ -37,6 +37,17 @@ h2 {
   text-transform: uppercase;
 }
 
+h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 p {
   margin-bottom: 20px;
   font-family: Josefin Sans, sans-serif;
