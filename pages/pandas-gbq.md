@@ -1,6 +1,5 @@
-title: Pandas & Google Big Query
-image: /static/pictures/pandas-gbq/pandas_logo.png
 date: 2020-01-21
+title: Pandas & Google BigQuery
 
 # Querying data from pandas for local analysis
 
@@ -15,6 +14,7 @@ To get started with BigQuery you need to [set up](https://cloud.google.com/gcp/g
 While GBQ is a fantastic cloud database, it's isn't appropriate for all of our data analysis needs, sometimes we want to get the data out of GBQ and into our python environment. [pandas-gbq](https://pandas-gbq.readthedocs.io/en/latest/) is designed for exactly this situation. Using your preferred [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) (conda can handle this too), install pandas gbq, using pip the command would be `pip install pandas-gbq`.
 
 <img src="/static/pictures/pandas-gbq/gbq-screenshot.png" alt="BigQuery UI" style="width:400px;display:block;margin-left:0;"/>
+
 ## Security and Credentials
 
 While the GBQ public datasets are available to anyone your personal datasets, or any business datasets you use need to be secured so that only authorised and credentialed people and [service accounts](https://cloud.google.com/iam/docs/understanding-service-accounts) can access sensitive data. This means that when we want to download data from GBQ we need to authories our application too. While this can be fiddly to set up for the first time, it's not too difficult to set up after you've done it once.  
