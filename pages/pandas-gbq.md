@@ -27,19 +27,17 @@ I'm going to connect using the service account method. To do this we'll have to 
 
 The python code to actually download from GBQ is then relatively straightforward.
 
-```
 
-import pandas as pd
-from google.oauth2 import service_account
+    import pandas as pd
+    from google.oauth2 import service_account
 
-credentials = service_account.Credentials.from_service_account_file('./private-key.json')
+    credentials = service_account.Credentials.from_service_account_file('./private-key.json')
 
-df = pd.read_gbq(
-    query=baseball_query,
-    project_id='pandas-gbq-example-project',
-    credentials=credentials)
+    df = pd.read_gbq(
+        query=baseball_query,
+        project_id='pandas-gbq-example-project',
+        credentials=credentials)
 
-```
 
 The full jupyter notebook showing this code can be found [here](https://github.com/jaspajjr/pandas-gbq-example).
 
